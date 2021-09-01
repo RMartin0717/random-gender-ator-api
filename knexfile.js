@@ -2,7 +2,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/treedata',
+    connection: 'postgres://localhost/word_associations',
     migrations: {
       directory: './db/migrations'
     },
