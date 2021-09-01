@@ -7,6 +7,6 @@ app.set('port', process.env.PORT || 3001)
 //set the port
 
 app.listen(app.get('port'), () => {
-  //get port (set above) and start server. 'listen' on this port 
+  //get port (set above) and start server. 'listen' on this port
   console.log(`App is now listening on port ${app.get('port')}!`)
 })
