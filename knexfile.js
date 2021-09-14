@@ -1,8 +1,9 @@
+require('dotenv').config()
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/word_associations',
+    connection: process.env.DATABASE_URL,
     migrations: {
       directory: './db/migrations'
     },
