@@ -8,7 +8,7 @@
 
 ## Description
 
-This API will replace the 3rd party word assocation API currently in use for the project, The Random Gender-ator. Currently a work in progress, the objective is to get practice with developing a backend API using Express with Node.js and Knex while building onto a project that I care about that could be improved in the word associations provided to it.  
+This API will replace the 3rd party word assocation API currently in use for the project, [The Random Gender-ator](https://github.com/RMartin0717/random-gender-ator/blob/main/README.md). Currently a work in progress, the objective is to get practice with developing a backend API using Express with Node.js and Knex while building onto a project that I care about that could be improved in the word associations provided to it.  
 
 ## In Progress
 
