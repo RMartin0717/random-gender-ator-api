@@ -12,7 +12,7 @@ This API will replace the 3rd party word assocation API currently in use for the
 
 ## In Progress
 
-I am running migrations to create word assocation tables and will be working on seeding data soon. 
+I am running migrations to create word assocation tables for each drop down word (animal, extraterrestrial, trash, and sparkle) and will be working on seeding data soon. 
 
 ## Authors
 <table>
