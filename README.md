@@ -26,13 +26,6 @@ I am running migrations to create word assocation tables and will be working on 
 
 ## Technologies
 <table>
-    <tr>
-        <td>Framework</td>
-        <td>Functionality</td>
-        <td>Structure</td>
-        <td>Styling</td>
-        <td>Continuous Integration</td>
-    </tr>
     </tr>
         <td><img src="https://bs-uploads.toptal.io/blackfish-uploads/components/skill_page/content/logo_file/logo/195562/express_js-161052138fa79136c0474521906b55e2.png" alt="react" width="100" height="auto" /></td>
     <td><img src="https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg" alt="react" width="100" height="auto" /></td>
