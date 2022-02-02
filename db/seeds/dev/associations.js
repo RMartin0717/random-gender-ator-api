@@ -1,9 +1,9 @@
 
 const associationsData = require('../seeding-data/associations-data');
 
-const createAssociation = async (knex, table, column, word) => {
+const createAssociation = async (knex, table, word) => {
   const wordAssociation = await knex([table]).insert({
-    [column]: word.wordAssociation,
+    'word_association': word.wordAssociation,
   }, 'id');
 }
 
@@ -15,19 +15,19 @@ exports.seed = async function(knex) {
     await knex('trashes').del()
 
     let animalsPromises = await associationsData.animalsData.map(animal => {
-      return createAssociation(knex, 'animals', 'animal_association', animal);
+      return createAssociation(knex, 'animals', animal);
     });
 
     let extraterrestrialsPromises = await associationsData.extraterrestrialsData.map(extraterrestrial => {
-      return createAssociation(knex, 'extraterrestrials', 'extraterrestial_association', extraterrestrial);
+      return createAssociation(knex, 'extraterrestrials', extraterrestrial);
     });
 
     let sparklesPromises = await associationsData.sparklesData.map(sparkle => {
-      return createAssociation(knex, 'sparkles', 'sparkle_association', sparkle);
+      return createAssociation(knex, 'sparkles', sparkle);
     });
 
     let trashesPromises = await associationsData.trashesData.map(trash => {
-      return createAssociation(knex, 'trashes', 'trash_association', trash);
+      return createAssociation(knex, 'trashes', trash);
     });
 
     //not workiing, but thought it would

@@ -4,7 +4,7 @@ exports.up = function(knex) {
     .createTable('animals', function(table) {
       table.increments('id')
         .primary()
-      table.string('animal_association')
+      table.string('word_association')
         .notNullable()
 
       table.timestamps(true, true)
@@ -12,7 +12,7 @@ exports.up = function(knex) {
     .createTable('extraterrestrials', function(table) {
       table.increments('id')
         .primary()
-      table.string('extraterrestial_association')
+      table.string('word_association')
         .notNullable()
 
       table.timestamps(true, true)
@@ -20,7 +20,7 @@ exports.up = function(knex) {
     .createTable('trashes', function(table) {
       table.increments('id')
         .primary()
-      table.string('trash_association')
+      table.string('word_association')
         .notNullable()
 
       table.timestamps(true, true)
@@ -28,7 +28,7 @@ exports.up = function(knex) {
     .createTable('sparkles', function(table) {
       table.increments('id')
         .primary()
-      table.string('sparkle_association')
+      table.string('word_association')
         .notNullable()
 
       table.timestamps(true, true)
