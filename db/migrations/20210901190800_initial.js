@@ -33,14 +33,6 @@ exports.up = function(knex) {
 
       table.timestamps(true, true)
     })
-    .createTable('chaoses', function(table) {
-      table.increments('id')
-        .primary()
-      table.string('chaoses_association')
-        .notNullable()
-
-      table.timestamps(true, true)
-    })
 };
 
 exports.down = function(knex) {
@@ -49,5 +41,4 @@ exports.down = function(knex) {
     .dropTable('extraterrestrials')
     .dropTable('trashes')
     .dropTable('sparkles')
-    .dropTable('chaoses')
 };

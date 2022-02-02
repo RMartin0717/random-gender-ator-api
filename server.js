@@ -18,6 +18,7 @@ app.use(cors())
 //routes
   //get array of word associations (dynamic path)
   //post more words to the arrays
+  //delete words from teh arrays
 
 app.listen(port, () => {
   //get port (set above) and start server. 'listen' on this port
