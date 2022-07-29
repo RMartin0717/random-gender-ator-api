@@ -61,7 +61,13 @@ app.delete(`/api/v1/:word/:id`, async (request, response) => {
 })
 
 app.get('/', (request, response) => {
-  response.json({ test: `Server is waiting to GET some info!` })
+  response.json({ test: `Try one of these routes! \n
+    /api/v1/animals \n
+    /api/v1/extraterrestrials \n
+    /api/v1/trashes \n
+    /api/v1/sparkles \n
+    `
+  })
 });
 
 app.listen(port, () => {
