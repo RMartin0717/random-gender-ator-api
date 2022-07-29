@@ -23,7 +23,13 @@ https://the-random-gender-ator-api.herokuapp.com/
 
 ## Endpoints 
 
-"word" parameter endpoint options (currently) include:
+| Method | Endpoint | Request Body | Sample Response
+--- | --- | --- | ---
+`GET` | `'/api/v1/:word'` | n/a | `[{ "id": 1, "word_association": "squirrel", "created_at": "2022-07-29T20:42:22.972Z", "updated_at": "2022-07-29T20:42:22.972Z" }, ...]`
+`POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
+`DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
+
+"word" parameter options (currently) include:
 
 | Word Association | Endpoint
 --- | ---
@@ -31,12 +37,6 @@ https://the-random-gender-ator-api.herokuapp.com/
 `extraterrestrial` | `/api/v1/extraterrestrials`
 `trash` | `/api/v1/trashes`
 `sparkle` | `/api/v1/sparkles`
-
-| Method | Endpoint | Request Body | Sample Response
---- | --- | --- | ---
-`GET` | `'/api/v1/:word'` | n/a | `[{ "id": 1, "word_association": "squirrel", "created_at": "2022-07-29T20:42:22.972Z", "updated_at": "2022-07-29T20:42:22.972Z" }, ...]`
-`POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
-`DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
 
 ## In Progress
 
