@@ -15,6 +15,7 @@ Word associations for each of these words can be retrieved using GET requests to
 ## Deploy Link and Endpoints
 
 The API is deployed on Heroku to the following link:
+
 https://the-random-gender-ator-api.herokuapp.com/
 
 "word" parameter endpoint options (currently) include:
