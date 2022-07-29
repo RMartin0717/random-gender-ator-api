@@ -61,13 +61,7 @@ app.delete(`/api/v1/:word/:id`, async (request, response) => {
 })
 
 app.get('/', (request, response) => {
-  response.json({ test: `Try one of these routes! \n
-    /api/v1/animals \n
-    /api/v1/extraterrestrials \n
-    /api/v1/trashes \n
-    /api/v1/sparkles \n
-    `
-  })
+  response.json({ endpoints: { animal: `/api/v1/animals`, extraterrestrial: `/api/v1/extraterrestrials`, trash: `/api/v1/trashes`, sparkle: `/api/v1/sparkles` }})
 });
 
 app.listen(port, () => {
