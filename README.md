@@ -8,11 +8,33 @@
 
 ## Description
 
-This API will replace the 3rd party word assocation API currently in use for the project, [The Random Gender-ator](https://github.com/RMartin0717/random-gender-ator/blob/main/README.md). Currently a work in progress, the objective is to get practice with developing a backend API using Express with Node.js and Knex while building onto a project that I care about that could be improved in the word associations provided to it.  
+This API was built using Node.js with Express, Knex, and Postgres to work specifically with the project, [The Random Gender-ator](https://github.com/RMartin0717/random-gender-ator/blob/main/README.md). It has 4 endpoints which contain arrays of word associations for "animal", "extraterrestrial", "trash", and "sparkle"--the 4 base words used in the creation of new genders for The Random Gender-ator app.
+
+Word associations for each of these words can be retrieved using GET requests to the respective endpoints and new words can be added to or deleted from these word association endpoints with POST and DELETE requests.
+
+## Deploy Link and Endpoints
+
+The API is deployed on Heroku to the following link:
+https://the-random-gender-ator-api.herokuapp.com/
+
+"word" parameter endpoint options (currently) include:
+
+| Word Association | Endpoint
+--- | ---
+`animal` | `/api/v1/animals`
+`extraterrestrial` | `/api/v1/extraterrestrials`
+`trash` | `/api/v1/trashes`
+`sparkle` | `/api/v1/sparkles`
+
+| Method | Endpoint | Request Body | Sample Response
+--- | --- | --- | ---
+`GET` | `'/api/v1/:word'` | n/a | `[{ "id": 1, "word_association": "squirrel", "created_at": "2022-07-29T20:42:22.972Z", "updated_at": "2022-07-29T20:42:22.972Z" }, ...]`
+`POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
+`DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
 
 ## In Progress
 
-I am running migrations to create word assocation tables for each drop down word (animal, extraterrestrial, trash, and sparkle) and will be working on seeding data soon. 
+The API is up and running on Heroku (link above). Next steps are to replace the current front end network calls to a public API with calls to this API.
 
 ## Authors
 <table>
