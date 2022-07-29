@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "Riley Martin",
   "license": "ISC",
-  "description": "",
+  "description": "## Table of Contents * [Description](#description) * [In Progress](#inprogress) * [Authors](#authors) * [Technologies](#technologies)",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -18,5 +18,14 @@
     "knex": "^0.95.10",
     "node": "^16.6.1",
     "pg": "^8.7.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RMartin0717/random-gender-ator-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RMartin0717/random-gender-ator-api/issues"
+  },
+  "homepage": "https://github.com/RMartin0717/random-gender-ator-api#readme"
 }
