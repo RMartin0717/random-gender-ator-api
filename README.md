@@ -2,6 +2,8 @@
 
 ## Table of Contents
 * [Description](#description)
+* [Deploy Link](#deploylink)
+* [Endpoints](#endpoints)
 * [In Progress](#inprogress)
 * [Authors](#authors)
 * [Technologies](#technologies)
@@ -12,11 +14,14 @@ This API was built using Node.js with Express, Knex, and Postgres to work specif
 
 Word associations for each of these words can be retrieved using GET requests to the respective endpoints and new words can be added to or deleted from these word association endpoints with POST and DELETE requests.
 
-## Deploy Link and Endpoints
+## Deploy Link
 
 The API is deployed on Heroku to the following link:
 
 https://the-random-gender-ator-api.herokuapp.com/
+
+
+## Endpoints 
 
 "word" parameter endpoint options (currently) include:
 
