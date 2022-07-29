@@ -19,11 +19,11 @@ app.use(cors())
 app.get(`/api/v1/:word`, async (request, response) => {
   const { word } = request.params
   try {
-    const words = await database([word]).select()
-    response.status(200).json(words)
+    const word_associations = await database([word]).select()
+    response.status(200).json(word_associations)
   }
   catch(error) {
-    response.status(500).json({ error})
+    response.status(500).json({ error })
   }
 })
 
@@ -34,12 +34,13 @@ app.post(`/api/v1/:word`, async (request, response) => {
   const newWord = request.body
 
   if (!word_association) {
-  response.status(422).json({ error: `Missing property of word_association. Expected format: { word_association: <String> }`})
+    response.status(422).json({ error: `Missing property of word_association. Expected format: { word_association: <String> }`})
   }
   try {
-  const id = await database([word]).insert(newWord, 'id')
-  response.status(201).json({ id });
-  } catch (error) {
+    const id = await database([word]).insert(newWord, 'id')
+    response.status(201).json({ id });
+  }
+  catch (error) {
     response.status(500).json({ error });
   }
 })
@@ -53,7 +54,8 @@ app.delete(`/api/v1/:word/:id`, async (request, response) => {
       response.status(404).json({ error: `Word not found.`})
     }
     response.status(201).json(`${deleteWord} word deleted`)
-  } catch(error) {
+  }
+  catch(error) {
     response.status(500).json(error.message)
   }
 })

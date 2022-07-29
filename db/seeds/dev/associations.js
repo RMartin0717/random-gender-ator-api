@@ -3,7 +3,7 @@ const associationsData = require('../seeding-data/associations-data');
 
 const createAssociation = async (knex, table, word) => {
   const wordAssociation = await knex([table]).insert({
-    'word_association': word.wordAssociation,
+    'word_association': word.word_association,
   }, 'id');
 }
 
