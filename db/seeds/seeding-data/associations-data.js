@@ -1,25 +1,37 @@
 const wordsData = {
   animalsData: [
     {
-      wordAssociation: 'squirrel'
+      word_association: 'squirrel'
     },
     {
-      wordAssociation: 'bear'
+      word_association: 'bear'
+    },
+    {
+      word_association: 'fawn'
     }
   ],
   extraterrestrialsData: [
     {
-      wordAssociation: 'spaceship'
+      word_association: 'spaceship'
+    },
+    {
+      word_association: 'laser'
     }
   ],
   sparklesData: [
     {
-      wordAssociation: 'glitter'
+      word_association: 'glitter'
+    },
+    {
+      word_association: 'shiny'
     }
   ],
   trashesData: [
     {
-      wordAssociation: 'dumpster'
+      word_association: 'dumpster'
+    },
+    {
+      word_association: 'fire'
     }
   ]
 }
