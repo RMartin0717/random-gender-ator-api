@@ -29,7 +29,7 @@ https://the-random-gender-ator-api.herokuapp.com/
 `POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
 `DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
 
-"word" parameter options (currently) include:
+### "word" parameter options (currently) include:
 
 | Word Association | Endpoint
 --- | ---
