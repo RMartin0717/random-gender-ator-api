@@ -53,9 +53,9 @@ I would like to research how to build out a testing suite for a backend app next
 ## Technologies
 <table>
 <tr>
-        <td width="100">Database</td>
-        <td width="100">Backend Environmet and Web App Framework</td>
-        <td width="100">Query Builder</td>
+        <td width="150" align="center">Database</td>
+        <td width="150" align="center">Backend Environmet and Web App Framework</td>
+        <td width="150" align="center">Query Builder</td>
     </tr>  
 <tr>
     <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5B8GMClLqIJ2RObCTxzObLFKRYbg7fIKlCaZIOqnQhglC9o5DXT7Eg5YWNTnIidoHD4&usqp=CAU" alt="postgres" width="100" height="auto" /></td>
