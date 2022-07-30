@@ -1,25 +1,23 @@
 # The Random Gender-ator API
 
 ## Table of Contents
-* [Description](#description)
-* [Deploy Link](#deploylink)
+* [Overview](#overview)
 * [Endpoints](#endpoints)
 * [In Progress](#inprogress)
-* [Authors](#authors)
+* [Author](#author)
 * [Technologies](#technologies)
 
-## Description
+## Overview 
+
+### Deploy Link
+
+https://the-random-gender-ator-api.herokuapp.com/
+
+### Description
 
 This API was built using Node.js with Express, Knex, and Postgres to work specifically with the project, [The Random Gender-ator](https://github.com/RMartin0717/random-gender-ator/blob/main/README.md). It has 4 endpoints which contain arrays of word associations for "animal", "extraterrestrial", "trash", and "sparkle"--the 4 base words used in the creation of new genders for The Random Gender-ator app.
 
 Word associations for each of these words can be retrieved using GET requests to the respective endpoints and new words can be added to or deleted from these word association endpoints with POST and DELETE requests.
-
-## Deploy Link
-
-The API is deployed on Heroku to the following link:
-
-https://the-random-gender-ator-api.herokuapp.com/
-
 
 ## Endpoints 
 
@@ -40,7 +38,7 @@ https://the-random-gender-ator-api.herokuapp.com/
 
 ## In Progress
 
-The API is up and running on Heroku (link above). Next steps are to replace the current front end network calls to a public API with calls to this API.
+I would like to research how to build out a testing suite for a backend app next for this project. This will start with researching frameworks and determining which one to use and then learning how to implement it.
 
 ## Authors
 <table>
