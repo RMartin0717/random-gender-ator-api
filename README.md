@@ -1,24 +1,33 @@
 # The Random Gender-ator API
 
 ## Table of Contents
-* [Description](#description)
+* [Overview](#overview)
+* [Endpoints](#endpoints)
 * [In Progress](#inprogress)
-* [Authors](#authors)
+* [Author](#author)
 * [Technologies](#technologies)
 
-## Description
+## Overview 
+
+### Deploy Link
+
+https://the-random-gender-ator-api.herokuapp.com/
+
+### Description
 
 This API was built using Node.js with Express, Knex, and Postgres to work specifically with the project, [The Random Gender-ator](https://github.com/RMartin0717/random-gender-ator/blob/main/README.md). It has 4 endpoints which contain arrays of word associations for "animal", "extraterrestrial", "trash", and "sparkle"--the 4 base words used in the creation of new genders for The Random Gender-ator app.
 
 Word associations for each of these words can be retrieved using GET requests to the respective endpoints and new words can be added to or deleted from these word association endpoints with POST and DELETE requests.
 
-## Deploy Link and Endpoints
+## Endpoints 
 
-The API is deployed on Heroku to the following link:
+| Method | Endpoint | Request Body | Sample Response
+--- | --- | --- | ---
+`GET` | `'/api/v1/:word'` | n/a | `[{ "id": 1, "word_association": "squirrel", "created_at": "2022-07-29T20:42:22.972Z", "updated_at": "2022-07-29T20:42:22.972Z" }, ...]`
+`POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
+`DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
 
-https://the-random-gender-ator-api.herokuapp.com/
-
-"word" parameter endpoint options (currently) include:
+### "word" parameter options (currently) include:
 
 | Word Association | Endpoint
 --- | ---
@@ -27,15 +36,9 @@ https://the-random-gender-ator-api.herokuapp.com/
 `trash` | `/api/v1/trashes`
 `sparkle` | `/api/v1/sparkles`
 
-| Method | Endpoint | Request Body | Sample Response
---- | --- | --- | ---
-`GET` | `'/api/v1/:word'` | n/a | `[{ "id": 1, "word_association": "squirrel", "created_at": "2022-07-29T20:42:22.972Z", "updated_at": "2022-07-29T20:42:22.972Z" }, ...]`
-`POST` | `'/api/v1/:word'` | `{ "word_association": "gorilla" }` | `{ "id": [6] }`
-`DELETE` | `'/api/v1/:word/:id'` | n/a | `"1 word deleted"`
-
 ## In Progress
 
-The API is up and running on Heroku (link above). Next steps are to replace the current front end network calls to a public API with calls to this API.
+I would like to research how to build out a testing suite for a backend app next for this project. This will start with researching frameworks and determining which one to use and then learning how to implement it.
 
 ## Authors
 <table>
@@ -49,9 +52,42 @@ The API is up and running on Heroku (link above). Next steps are to replace the 
 
 ## Technologies
 <table>
-    </tr>
-        <td><img src="https://bs-uploads.toptal.io/blackfish-uploads/components/skill_page/content/logo_file/logo/195562/express_js-161052138fa79136c0474521906b55e2.png" alt="react" width="100" height="auto" /></td>
-    <td><img src="https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg" alt="react" width="100" height="auto" /></td>
-    <td><img src="https://img.stackshare.io/service/3376/knex.png" alt="react" width="100" height="auto" /></td>
-    </tr>
+    <tr>
+        <td width="200" align="center">
+            Database
+        </td>
+        <td width="200" align="center">
+            Backend Environmet and Web App Framework
+        </td>
+        <td width="200" align="center">
+            Query Builder
+        </td>
+    </tr>  
+    <tr>
+        <td>
+            <p align="center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5B8GMClLqIJ2RObCTxzObLFKRYbg7fIKlCaZIOqnQhglC9o5DXT7Eg5YWNTnIidoHD4&usqp=CAU" alt="postgres" width="150" height="auto" />
+            </p>
+        </td>
+        <td>
+            <p align="center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wwdNyt-3YpkexQQVyaLIqDLqFlSEBcAxjywEX9L_n_UutEm74piqD4h5NElu6gOQxEw&usqp=CAU" alt="node.js and express" width="150" height="auto" />                 </p>
+        </td>
+        <td>
+            <p align="center">
+                <img src="https://img.stackshare.io/service/3376/knex.png" alt="knex" width="150" height="auto" />
+            </p>
+        </td>
+  </tr>
+ <tr>
+    <td width="200" align="center">
+        Postgres
+    </td>
+    <td width="200" align="center">
+        Node.js and Express
+    </td>
+    <td width="200" align="center">
+        Knex
+    </td>
+</tr>  
 </table>
