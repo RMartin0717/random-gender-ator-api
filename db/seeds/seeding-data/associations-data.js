@@ -43,10 +43,37 @@ const wordsData = {
       word_association: 'zoo keeper'
     },
     {
-      word_association: 'cat'
+      word_association: 'racoon'
     },
     {
-      word_association: 'racoon'
+      word_association: 'fur'
+    },
+    {
+      word_association: 'fluff'
+    },
+    {
+      word_association: 'fuzz'
+    },
+    {
+      word_association: 'growl'
+    },
+    {
+      word_association: 'claw'
+    },
+    {
+      word_association: 'beek'
+    },
+    {
+      word_association: 'tail'
+    },
+    {
+      word_association: 'slither'
+    },
+    {
+      word_association: 'person'
+    },
+    {
+      word_association: 'president?'
     }
   ],
   extraterrestrialsData: [
@@ -97,6 +124,30 @@ const wordsData = {
     },
     {
       word_association: 'time dilation'
+    },
+    {
+      word_association: 'green'
+    },
+    {
+      word_association: 'smershmestrial'
+    },
+    {
+      word_association: 'icon'
+    },
+    {
+      word_association: 'solar'
+    },
+    {
+      word_association: 'void'
+    },
+    {
+      word_association: 'ecplipse'
+    },
+    {
+      word_association: 'asteroid'
+    },
+    {
+      word_association: 'crater'
     }
   ],
   sparklesData: [
@@ -141,7 +192,37 @@ const wordsData = {
     },
     {
       word_association: 'sequin'
-    }
+    },
+    {
+      word_association: 'can'
+    },
+    {
+      word_association: 'furry'
+    },
+    {
+      word_association: 'dream'
+    },
+    {
+      word_association: 'gem'
+    },
+    {
+      word_association: 'unicorn'
+    },
+    {
+      word_association: 'rainbow'
+    },
+    {
+      word_association: 'gold'
+    },
+    {
+      word_association: 'glistening'
+    },
+    {
+      word_association: 'light'
+    },
+    {
+      word_association: 'reflective'
+    },
   ],
   trashesData: [
     {
@@ -188,7 +269,37 @@ const wordsData = {
     },
     {
       word_association: 'toilet'
-    }
+    },
+    {
+      word_association: 'eye'
+    },
+    {
+      word_association: 'queen'
+    },
+    {
+      word_association: 'king'
+    },
+    {
+      word_association: 'legend'
+    },
+    {
+      word_association: 'bag'
+    },
+    {
+      word_association: 'compost'
+    },
+    {
+      word_association: 'smelly'
+    },
+    {
+      word_association: 'mold'
+    },
+    {
+      word_association: 'mulch'
+    },
+    {
+      word_association: 'sticky'
+    },
   ]
 }
 
