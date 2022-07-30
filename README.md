@@ -53,15 +53,13 @@ I would like to research how to build out a testing suite for a backend app next
 ## Technologies
 <table>
 <tr>
-        <td>Database</td>
-        <td>Web App Framework</td>
-        <td>Backend Environmet</td>
-        <td>Query Builder</td>
+        <td width="100">Database</td>
+        <td width="100">Backend Environmet and Web App Framework</td>
+        <td width="100">Query Builder</td>
     </tr>  
 <tr>
     <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5B8GMClLqIJ2RObCTxzObLFKRYbg7fIKlCaZIOqnQhglC9o5DXT7Eg5YWNTnIidoHD4&usqp=CAU" alt="postgres" width="100" height="auto" /></td>
-    <td><img src="https://bs-uploads.toptal.io/blackfish-uploads/components/skill_page/content/logo_file/logo/195562/express_js-161052138fa79136c0474521906b55e2.png" alt="express" width="100" height="auto" /></td>
-    <td><img src="https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg" alt="node.js" width="100" height="auto" /></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wwdNyt-3YpkexQQVyaLIqDLqFlSEBcAxjywEX9L_n_UutEm74piqD4h5NElu6gOQxEw&usqp=CAU" alt="node.js and express" width="100" height="auto" />         </td>
     <td><img src="https://img.stackshare.io/service/3376/knex.png" alt="knex" width="100" height="auto" /></td>
   </tr>
 </table>
