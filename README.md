@@ -4,6 +4,7 @@
 * [Overview](#overview)
 * [Endpoints](#endpoints)
 * [In Progress](#inprogress)
+* [Deep Dive](#deepdive)
 * [Author](#author)
 * [Technologies](#technologies)
 
@@ -46,6 +47,30 @@ Word associations for each of these words can be retrieved using GET requests to
 ## In Progress
 
 I would like to research how to build out a testing suite for a backend app next for this project. This will start with researching frameworks and determining which one to use and then learning how to implement it.
+
+## Deep Dive
+
+### Notable features
+
+ - Is consumed by [this](https://the-random-gender-ator.herokuapp.com/) front end app
+ - Has 4 table migrations, each connected to their own endpoint
+ - Implements the Knex query builder in order to query data
+ - Includes seeded data for each table
+ - Ability to use POST and DELETE requests to add to or remove items from endpoints
+ - Deployed to Heroku with PostgreSQL add-on to seed data to deployed server
+
+
+### Installation
+1. Clone down this [repo](https://github.com/RMartin0717/random-gender-ator-api)
+2. CD into project directory
+3. Run npm i to install all project dependencies
+4. Run npm start to begin the server
+5. In a new browser window, go to localhost:5000/
+6. To view specific datasets, use the routes listed in the [Endpoints](#endpoints) table above
+
+### Walkthrough
+
+ - 
 
 ## Authors
 <table>
