@@ -68,10 +68,6 @@ I would like to research how to build out a testing suite for a backend app next
 5. In a new browser window, go to localhost:5000/
 6. To view specific datasets, use the routes listed in the [Endpoints](#endpoints) table above
 
-### Walkthrough
-
- - 
-
 ## Authors
 <table>
     <tr>
